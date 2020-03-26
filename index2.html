@@ -25,7 +25,7 @@ body{font-family:sans-serif;}
 .item .c .dd{color:#999;margin-top:5px;font-size:13px;line-height:20px;}
 
 .infinity_wrapper{overflow:hidden;}
-.infinity_box{position:relative;}
+.infinity_box{position:relative;height:1630px;}
 .infinity_box.hide .list{display:none;}
 .virtual_element{position:absolute;top:50%;width:1px;height:4890px;transform:translateY(-50%);background:#f00;z-index:10000;}
 .virtual_element.v1{left:0;}
@@ -64839,5 +64839,20 @@ body{font-family:sans-serif;}
 		</div>
 	</div>
 </div>
+<script>
+window.onscroll = function() {
+	var doc = document.querySelectorAll('.infinity_box');
+	for (var i = 0; i < doc.length; i++) {
+		doc[i].classList.add('hide');
+	}
+
+	for (var j = 0; j < 3; j++){
+		var itm = document.elementFromPoint(j, document.documentElement.clientHeight / 2);
+		if (itm.parentNode && itm.parentNode.className && itm.parentNode.className.indexOf('infinity_box') !== -1) {
+			itm.parentNode.classList.remove('hide');
+		}
+	}
+}
+</script>
 </body>
 </html>
