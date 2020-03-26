@@ -9,7 +9,7 @@
 body{font-family:sans-serif;}
 
 .list{display:block;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:translateZ(0);-webkit-transform:translateZ(0);}
-.item{display:block;overflow:hidden;position:relative;padding:20px;background:#ff5;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:translateZ(0);-webkit-transform:translateZ(0);}
+.item{display:block;overflow:hidden;position:relative;padding:20px;background-color:rgba(255,255,255,0);backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:translateZ(0);-webkit-transform:translateZ(0);}
 .item:after{position:absolute;right:0;bottom:0;left:0;width:100%;height:1px;background-color:#f1f1f1;content:'';}
 .item .r{float:right;margin-left:20px;}
 .item .r .date{color:#999;font-size:12px;line-height:20px;}
