@@ -27,7 +27,7 @@ body{font-family:sans-serif;}
 .infinity_wrapper{}
 .infinity_box{position:relative;height:1630px;}
 .infinity_box.hide .list{display:none;}
-.virtual_element{position:absolute;top:50%;width:1px;height:4890px;transform:translateY(-50%);z-index:10000;}
+.virtual_element{position:absolute;top:50%;width:1px;height:16300px;transform:translateY(-50%);z-index:10000;}
 .virtual_element.v1{left:0;background:#f00;}
 .virtual_element.v2{left:10px;background:#0f0;}
 .virtual_element.v3{left:20px;background:#00f;}
